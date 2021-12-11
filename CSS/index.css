@@ -54,4 +54,44 @@
     a {
         text-decoration: none;
       }
+
+      #destinations {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+        background-color: #f0f0f0;
+    }
+    
+    #destinations h3 {
+        font-size: 3rem;
+        color: #F2B6CC;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 4px 4px 4px pink;
+      }
+    
+    .destinations-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    }
+    
+    .destinations-tile {
+    margin: 2rem;
+    transition: transform 0.3s linear;
+    }
+    
+    .destinations-tile:hover {
+      transform: translateY(8px)
+    }
+    
+    h1 {
+        color: #F2B6CC;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 4px 4px 4px pink;
+        font-size: larger;
+        align-content: center;
+    }
     
