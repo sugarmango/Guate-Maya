@@ -19,14 +19,39 @@
       @media (max-width: 980px) {
         html {
           font-size: 40%;
-          color:blue;
+          color:rgb(53, 2, 53);
         }
       }
     
+      /*Header text and logo*/
+header {
+  display:flex;
+  flex-direction:row;
+}
+
+h1#header {
+color: #f856bf;
+font-weight: bolder;
+font-size: 2em;
+font-family: 'Montserrat', sans-serif;
+display: flex;
+justify-content: center;
+padding-top: 73px;
+padding-left: 20px;
+margin-bottom: 10px;
+}
+
+#logo {
+  display: flex;
+  width:180px;
+  height: auto;
+  margin-left: 10px;
+}
+      /*Navbar*/
+
     #navbar {   
     width: 100%;
-    background-color:#F2D5DD;
-    position: fixed;
+    background-color:#925db4;
     }
     
     .nav-list {
@@ -42,19 +67,41 @@
     .nav-list a {
         display: block;
         color: #f0f0f0;
-        text-shadow: 4px 4px 4px pink;
+        text-shadow: 4px 4px 4px #b4a0c0;
         padding: 1.5rem;
         font-size: xx-large;
     }
     
     .nav-list a:hover {
-        background-color:#F2B6CC;
+        background-color:#8036ad;
     }
     
     a {
         text-decoration: none;
       }
 
+      /*Hero image*/
+      .osihero {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .osihero img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /*About*/
+    h1#about {
+      display: flex;
+      justify-content: center;
+      font-size: 3rem;
+        color: #f856bf;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 4px 4px 4px pink;
+    }
+
+    /*Destinations tile*/
       #destinations {
         display: flex;
         justify-content: center;
@@ -66,7 +113,7 @@
     
     #destinations h3 {
         font-size: 3rem;
-        color: #F2B6CC;
+        color: #f856bf;
         font-family: 'Montserrat', sans-serif;
         text-shadow: 4px 4px 4px pink;
       }
@@ -87,6 +134,21 @@
       transform: translateY(8px)
     }
     
+    figcaption {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 600;
+      position: relative;
+      top: -35px;
+      bottom: 35px;
+      text-transform:uppercase;
+      font-family: 'Montserrat', sans-serif;
+      color: #f0f0f0;
+      background-color: #f29f0598;
+      padding: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
     h1 {
         color: #F2B6CC;
         font-family: 'Montserrat', sans-serif;
@@ -95,3 +157,49 @@
         align-content: center;
     }
     
+    #contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      background-color: #f856bf;
+      font-size: 2rem;
+  }
+  
+  #contact h1, h4 {
+      padding-bottom: 2rem;
+      color: #f0f0f0;
+      font-family: 'Montserrat', sans-serif;
+      text-shadow: 4px 4px 4px pink;
+  }
+  
+  #contact div {
+  display: flex;
+  justify-content: center;
+  color: #f0f0f0;
+  text-shadow: 4px 4px 4px pink;
+  }
+  
+  #contact div a {
+  padding: 2rem;
+  color: #f0f0f0;
+  text-shadow: 4px 4px 4px pink;
+  transition: transform 0.3s linear;
+  }
+  
+  #contact div a:hover {
+      transform: translateY(8px);
+  
+  }
+
+  footer {
+    display: block;
+    background-color:#f856bf;
+     text-align: center;
+     padding: 1rem;
+     font-size: x-large;
+     color: #f0f0f0;
+     text-shadow: 4px 4px 4px pink;
+     font-family: 'Montserrat', sans-serif;
+ }

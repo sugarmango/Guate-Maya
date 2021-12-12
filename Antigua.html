@@ -6,41 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/antigua.css"/>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
     <title>Guate Maya</title>
 </head>
 <body>
-     <!--Start of the page header -->
+      <!--Start of the page header -->
 <header>
-    <img src="./images/Asset 2.png" alt="site logo" width="120" height="80">
-    <div>
-<h1>A World of Adventure and Wonder</h1>
-    </div>
+    <img id="logo" src="./images/Asset 2.png" alt="site logo" width="120" height="80">
+    <h1 id="header">A World of Adventure and Wonder Waiting for You!</h1>
 </header>
 <!--Start of the page navigation-->
     <nav id="navbar">
         <ul class="nav-list">
             <li>
-                <a href="#home">HOME</a>
+                <a href="./index.html">HOME</a>
             </li>
             <li>
                 <a href="#destinations">DESTINATIONS</a>
             </li>
             <li>
-                <a href="#contact">CONTACT</a>
+                <a href="./Contact.html">CONTACT</a>
             </li>
         </ul>
     </nav>
-    <section id="welcome-section">
+    <!--Hero image-->
+    <section id="hero-section">
         <div class="container">
-            <div class="profile-container">
-                <div class="hero">
-                    <img src="#" alt="#">
+            <div class="hero-container">
+                <div class="osihero">
+                    <img src="./images/Osi-Atitlan.jpg" alt="Little girl in Atitlan">
                 </div>
             </div>
-        </div>
-        <div class="profile-info">
-            <h1 class="intro">Hi, I'm Rosa.</h1>
-            <h4 class="about"> I am a Web Design Student.</h4>
         </div>
     </section>
     <section id="destinations">
@@ -66,5 +68,20 @@
     </a>
 </div>
 </section>
+<!--Contact Info-->
+<section id="contact">
+    <h1>Thinking about an Adventure?</h1>
+    <h4>Let us Help You!</h4>
+    <div>
+    <a id="profile-link" href="https://www.instagram.com/sugarmang0/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <a id="profile-link" href="https://www.youtube.com/channel/UCF4SSTyYlo71OS4GXURINow"target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+    <a id="profile-link" href="" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+    <a id="profile-link" href="" target="_blank"><i class="far fa-paper-plane"></i> Send an email</a>
+    <a id="profile-link" href="" target="_blank"><i class="fas fa-mobile-alt"></i> Phone</a>
+</div>
+</section>
+<footer>
+    <h5>Capstone Project for DGM 2120 created by Rosa Baker &copy; 2021</h5>
+</footer>
 </body>
 </html>
