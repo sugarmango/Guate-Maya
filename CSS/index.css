@@ -100,7 +100,17 @@ margin-bottom: 10px;
         font-family: 'Montserrat', sans-serif;
         text-shadow: 4px 4px 4px pink;
     }
+ p {
+   margin: 0 4rem;
+   color: #8036ad;
+   font-size: 1em;
+   font-family: 'Montserrat', sans-serif;
+   line-height: 1.75rem;
+ }
 
+ p a {
+   color: #f856bf;
+ }
     /*Destinations tile*/
       #destinations {
         display: flex;

@@ -76,19 +76,9 @@ margin-bottom: 10px;
         a {
             text-decoration: none;
           }
-/*Hero*/
-.monterrico-hero {
-  width: 100%;
-  margin: 0;
-}
-
-.monterrico-hero img {
-  width: 100%;
-  height: auto;
-}
 
           /* Destinations*/
-          #packages {
+          #destinations {
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -97,87 +87,18 @@ margin-bottom: 10px;
             background-color: #f0f0f0;
         }
         
-        #packages h3 {
+        #destinations h3 {
             font-size: 3rem;
             color: #f856bf;
             font-family: 'Montserrat', sans-serif;
             text-shadow: 4px 4px 4px pink;
           }
-          ul.package {
-            width: 400px;
-            height: 300px;
-          }
-          #packages div div {
-            margin: 0% 1%;
-          }
-          #packages div div img {
-            width: 400px;
-            height: 300px;
-            margin: 0%;
-          }
-
-section div.divrow {
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-}
-
-section div img, section div iframe {
-  margin: 0% 2%;
-}
-
-section h1 {
-  color: #f856bf;
-            font-family: 'Montserrat', sans-serif;
-            text-shadow: 4px 4px 4px pink;
-            font-size: 3rem;
-            display: flex;
-            justify-content: center;
-}
-section p {
-  font-family: 'Montserrat', sans-serif;
-  color: #925db4;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  line-height: 1.75rem;
-}
-
-section ul h4 {
-display: flex;
-justify-content: center;
-font-size: 2em;
-          } 
-
-        section ul {
-          padding: 1rem 0.9vw;
-          background-color: #f29f05e1;
-          border-radius: 0.5rem;
-          width: 26rem;
-        }  
-       
-        section ul li {
-          margin-left: 2em;
-          font-family: 'Montserrat', sans-serif;
-          font-weight: bold;
-          color: #fff;
-        }
-
-        section ul a {
-          color: #f856bf;
-          font-weight: bolder;
-        }
         
-        section h5 {
-         display: flex;
-        justify-content: center;
-        font-size: 2em;
-        }
-
         .destinations-grid {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-      
+        
         }
         
         .destinations-tile {
@@ -194,14 +115,15 @@ font-size: 2em;
           font-size: 1rem;
           font-weight: 600;
           position: relative;
-          bottom: 84px;
-         height: 5rem;
+          top: -35px;
+          bottom: 35px;
           text-transform:uppercase;
           font-family: 'Montserrat', sans-serif;
-          font-size: 3em;
           color: #f0f0f0;
           background-color: #f29f0598;
           padding: 1rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
       }
         h1 {
             color: #F2B6CC;
@@ -221,7 +143,7 @@ font-size: 2em;
         font-size: 2rem;
     }
     
-    #contact h1, h4, h5 {
+    #contact h1, h4 {
         padding-bottom: 2rem;
         color: #f0f0f0;
         font-family: 'Montserrat', sans-serif;
