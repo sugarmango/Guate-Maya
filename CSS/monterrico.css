@@ -19,7 +19,7 @@
       @media (max-width: 980px) {
         html {
           font-size: 40%;
-          color:blue;
+          
         }
       }
             /*Header text and logo*/
@@ -84,6 +84,7 @@ margin-bottom: 10px;
      /* Nav- Small screens*/
      @media only screen and (max-width: 800px) {
       .nav-list {
+      list-style-type: none;
       color:#fff
       margin: 0;
       padding: 0 2vw;
@@ -110,7 +111,7 @@ margin-bottom: 10px;
       text-decoration: none;
       }
 
-      nav .active a {
+       {
         background-image:#d16ba5;
         color: white;
     }
