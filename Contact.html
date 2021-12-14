@@ -28,7 +28,7 @@
                 <a href="./index.html">HOME</a>
             </li>
             <li>
-                <a href="#destinations">DESTINATIONS</a>
+                <a href="./index.html">DESTINATIONS</a>
             </li>
             <li>
                 <a href="./Gallery.html">GALLERY</a>
@@ -39,37 +39,66 @@
         </ul>
     </nav>
    <!--Hero image-->
-   <section id="hero-section">
-    <div class="container">
-        <div class="hero-container">
-            <div class="osihero">
-                <img src="./images/Osi-Atitlan.jpg" alt="Little girl in Atitlan">
-            </div>
-        </div>
+<!--Form-->
+<h1 id="header">Contact and Booking</h1>
+<section id="form">
+<form action="reservation.php" method="post">
+    <div class="elem-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="First and Last Name" pattern=[A-Z\sa-z]{3,20} required>
     </div>
-</section>
-    <section id="destinations">
-        <h3>Our Destinations</h3>
-        <div class="destinations-grid">
-            <a href="./Atitlan.html" class="destinations-tile">
-                <figure>
-                    <img src="#"/>
-                    <figcaption>Atitlan</figcaption>
-                </figure>
-        </a>
-        <a href="./Antigua.html" class="destinations-tile">
-            <figure>
-                <img src="#"/>
-                <figcaption>Antigua Guatemala</figcaption>
-            </figure>
-        </a>
-    <a href="./Monterrico.html" class="destinations-tile">
-        <figure>
-            <img src="#"/>
-            <figcaption>Monterrico Beach</figcaption>
-        </figure>
-    </a>
-</div>
+    <div class="elem-group">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="youremail@yourdomain.com" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="123-456-7890" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+      <label for="adult">Adults</label>
+      <input type="number" id="adult" name="total_adults" placeholder="1" min="1" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="child">Children</label>
+      <input type="number" id="child" name="total_children" placeholder="1" min="0" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkin-date">Check-in Date</label>
+      <input type="date" id="checkin-date" name="checkin" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkout-date">Check-out Date</label>
+      <input type="date" id="checkout-date" name="checkout" required>
+    </div>
+    <div class="elem-group">
+      <label for="destination-selection">Select Destination Preference</label>
+      <select id="destination-selection" name="destination_preference" required>
+          <option value="">Choose a Destination from the List</option>
+          <option value="connecting">Antigua</option>
+          <option value="adjoining">Atitlan</option>
+          <option value="adjacent">Monterrico</option>
+      </select>
+    </div>
+    <div class="elem-group">
+    <label for="package-selection">Select Preferred Package</label>
+      <select id="package-selection" name="package_preference" required>
+          <option value="">Choose a Package from the List</option>
+          <option value="connecting">1</option>
+          <option value="adjoining">2</option>
+          <option value="adjacent">3</option>
+      </select>
+    </div>
+    <hr>
+    <div class="elem-group">
+      <label for="message">Comments</label>
+      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important including customizing your trip." required></textarea>
+    </div>
+    <div class="elem-group">
+        <button type="submit">Send</button>
+    </div>
+    </form>
 </section>
 <!--Contact Info-->
 <section id="contact">
