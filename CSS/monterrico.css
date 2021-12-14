@@ -46,6 +46,9 @@ margin-bottom: 10px;
   height: auto;
   margin-left: 10px;
 }
+a.link {
+  color:#f856bf;
+}
  
 /* Nav- Big screens*/
 @media only screen and (min-width: 801px) {
@@ -111,10 +114,6 @@ margin-bottom: 10px;
       text-decoration: none;
       }
 
-       {
-        background-image:#d16ba5;
-        color: white;
-    }
   }
 
 /*Hero*/
