@@ -32,7 +32,7 @@ header {
 h1#header {
 color: #f856bf;
 font-weight: bolder;
-font-size: 3em;
+font-size: 2em;
 font-family: 'Montserrat', sans-serif;
 display: flex;
 justify-content: center;
@@ -72,6 +72,10 @@ margin-bottom: 10px;
               font-size: xx-large;
           }
           
+          nav li.active a {
+            background-color: #b4a0c0;
+        }
+
           .nav-list a:hover {
               background-color:#8036ad;
           }
@@ -85,7 +89,7 @@ margin-bottom: 10px;
        @media only screen and (max-width: 800px) {
         .nav-list {
         list-style-type: none;
-        color:#fff
+        color:#fff;
         margin: 0;
         padding: 0 2vw;
         font-family: 'Montserrat', sans-serif;
@@ -106,19 +110,32 @@ margin-bottom: 10px;
         padding: 1.5rem;
         font-size: xx-large;
                 } 
-
+        
+        nav li.active a {
+        background-color: #f856be;
+                        }
+          
   
     }
 
 /*Form*/
 section#form {
-  justify-content:center;
   display:flex;
-  
+  flex-direction:column;
+  text-align:center;
+}
+
+section#form div h1 {
+  padding: 2rem;
+  color: #f856be;
+  font-size: 2rem;
+  padding-left: 95px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 4px 4px 4px pink;
 }
 
 form {
-  width:60%; 
+  width:100%; 
 }
 
 div.elem-group {
@@ -165,7 +182,7 @@ div.elem-group textarea {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   border-radius: 5px;
-  padding 4px;
+  padding: 4px;
   height: 80px;
   border-color: #8036ad;
   

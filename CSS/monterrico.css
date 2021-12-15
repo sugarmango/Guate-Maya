@@ -42,7 +42,7 @@ margin-bottom: 10px;
 
 #logo {
   display: flex;
-  width: 180px;px;
+  width: 180px;
   height: auto;
   margin-left: 10px;
 }
@@ -88,7 +88,7 @@ a.link {
      @media only screen and (max-width: 800px) {
       .nav-list {
       list-style-type: none;
-      color:#fff
+      color:#fff;
       margin: 0;
       padding: 0 2vw;
       font-family: 'Montserrat', sans-serif;
@@ -135,7 +135,7 @@ button {
   border-radius: 10px;
   padding: 10px 36px;
   margin: 20px 100px;
-  display: wrap;
+  display: flex;
   justify-content: space-between;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -168,9 +168,10 @@ button:hover {
             font-family: 'Montserrat', sans-serif;
             text-shadow: 4px 4px 4px pink;
           }
+
           ul.package {
             width: 100%;
-            height: 50%;
+            height: 25%;
           }
           #packages div div {
             margin: 0% 1%;
@@ -210,7 +211,8 @@ section p {
   line-height: 1.75rem;
 }
 
-section ul h4 {
+section#packages h4, section#packages h5 {
+  background-color:#f29f05e1;
 display: flex;
 justify-content: center;
 font-size: 2em;
@@ -219,7 +221,6 @@ font-size: 2em;
         section ul {
           padding: 1rem 0.9vw;
           background-color: #f29f05e1;
-          border-radius: 0.5rem;
           width: 26rem;
         }  
        
@@ -235,11 +236,7 @@ font-size: 2em;
           font-weight: bolder;
         }
         
-        section h5 {
-         display: flex;
-        justify-content: center;
-        font-size: 2em;
-        }
+        
 
         .destinations-grid {
         display: flex;
@@ -257,7 +254,7 @@ font-size: 2em;
           transform: translateY(8px)
         }
         
-        figcaption {
+        div.figure {
           text-align: center;
           font-size: 1rem;
           font-weight: 600;
@@ -270,6 +267,7 @@ font-size: 2em;
           color: #f0f0f0;
           background-color: #f29f0598;
           padding: 1rem;
+          width:100%;
       }
         h1 {
             color: #F2B6CC;
