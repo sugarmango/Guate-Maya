@@ -48,36 +48,89 @@ margin-bottom: 10px;
   margin-left: 10px;
 }
 
-      #navbar {   
-        width: 100%;
-        background-color:#925db4;
-        }
-        
+/* Nav- Big screens*/
+@media only screen and (min-width: 801px) {
+  #navbar {   
+          width: 100%;
+          background-color:#925db4;
+          }
+          
+          .nav-list {
+          display: flex;
+          justify-content: flex-end;
+          list-style-type: none;
+          margin-right: 1rem;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+          }
+          
+          
+          .nav-list a {
+              display: block;
+              color: #f0f0f0;
+              text-shadow: 4px 4px 4px #b4a0c0;
+              padding: 1.5rem;
+              font-size: xx-large;
+          }
+          
+          .nav-list a:hover {
+              background-color:#8036ad;
+          }
+          
+          a {
+              text-decoration: none;
+            }
+          }
+  
+       /* Nav- Small screens*/
+       @media only screen and (max-width: 800px) {
         .nav-list {
-        display: flex;
-        justify-content: flex-end;
         list-style-type: none;
-        margin-right: 1rem;
+        color:#fff
+        margin: 0;
+        padding: 0 2vw;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
-        }
-        
-        
+        border-bottom: solid 1px rgb(233, 230, 230);
+        background-image: linear-gradient(to right bottom, #f856bf, #f856be, #925db4, #8036ad);
+    }
+                     
         .nav-list a {
-            display: block;
-            color: #f0f0f0;
-            text-shadow: 4px 4px 4px #b4a0c0;
-            padding: 1.5rem;
-            font-size: xx-large;
-        }
-        
-        .nav-list a:hover {
-            background-color:#8036ad;
-        }
-        
+        display: block;
+        padding: .8rem;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        text-align: center;
+        color: #f0f0f0;
+        text-shadow: 4px 4px 4px #b4a0c0;
+        padding: 1.5rem;
+        font-size: xx-large;
+                } 
+  
         a {
-            text-decoration: none;
-          }
+        text-decoration: none;
+        }
+  
+    }
+
+/* Thanks page goes here*/
+#thanks h1, #thanks h2{
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 3.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #f856bf;
+  line-height: 6rem;
+  
+}
+
+#thanks {
+
+  margin: 300px 0;
+}
 
       #contact {
         display: flex;

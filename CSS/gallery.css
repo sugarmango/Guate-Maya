@@ -77,6 +77,32 @@ margin-bottom: 10px;
             text-decoration: none;
           }
 
+/*Gallery*/
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.gallery figure {
+margin: 0.5rem 2% 0 0;
+
+}
+
+div.gallery img:hover {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+div.gallery figure img {
+  height: 300px;
+  width: auto;
+  }
+
+div.gallery figcaption {
+  text-align: center;
+  font-size: .8rem;
+  color: #fff;
+  font-weight: bolder;
+}
           /* Destinations*/
           #destinations {
             display: flex;

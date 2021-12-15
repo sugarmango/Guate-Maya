@@ -49,11 +49,20 @@
     </div>
     <div class="elem-group">
       <label for="email">Your E-mail</label>
-      <input type="email" id="email" name="visitor_email" placeholder="youremail@yourdomain.com" required>
+      <input type="email" id="email" name="visitor_email" placeholder="username@domain.com" required>
     </div>
     <div class="elem-group">
       <label for="phone">Your Phone</label>
       <input type="tel" id="phone" name="visitor_phone" placeholder="123-456-7890" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+    <div class="elem-group">
+        <label for="phone">Contact Form</label>
+        <div>
+            <label>Call</label>
+            <input type="radio" name="response" value="call"/>
+            <label>E-mail</label>
+            <input type="radio" name="response" value="E-mail"/>
+        </div>
     </div>
     <hr>
     <div class="elem-group inlined">
@@ -75,7 +84,7 @@
     <div class="elem-group">
       <label for="destination-selection">Select Destination Preference</label>
       <select id="destination-selection" name="destination_preference" required>
-          <option value="">Choose a Destination from the List</option>
+          <option value="">Choose a Destination</option>
           <option value="connecting">Antigua</option>
           <option value="adjoining">Atitlan</option>
           <option value="adjacent">Monterrico</option>
@@ -84,7 +93,7 @@
     <div class="elem-group">
     <label for="package-selection">Select Preferred Package</label>
       <select id="package-selection" name="package_preference" required>
-          <option value="">Choose a Package from the List</option>
+          <option value="">Choose a Package</option>
           <option value="connecting">1</option>
           <option value="adjoining">2</option>
           <option value="adjacent">3</option>
@@ -95,8 +104,10 @@
       <label for="message">Comments</label>
       <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important including customizing your trip." required></textarea>
     </div>
+<!--Button-->
     <div class="elem-group">
-        <button type="submit">Send</button>
+        <label></label>
+        <button onclick="window.location.href='./thanks.html';">Send</button>
     </div>
     </form>
 </section>
